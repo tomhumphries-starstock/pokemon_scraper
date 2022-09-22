@@ -25,3 +25,7 @@ def test_pokemon_list_lists_pokemon(client, fire_pokemon, wind_pokemon):
     for pokemon in fire_pokemon, wind_pokemon:
         assert pokemon.name in response_content
         assert pokemon.description in response_content
+        assert pokemon.species in response_content
+        for ability in pokemon.abilities.all():
+            assert ability.name in response_content
+
