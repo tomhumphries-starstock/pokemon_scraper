@@ -1,3 +1,8 @@
 from django.contrib import admin
+from pokemon.models import Pokemon, Ability, Species
 
-# Register your models here.
+
+admin.site.register(Pokemon)
+admin.site.register(Ability)
+admin.site.register(Species)
+

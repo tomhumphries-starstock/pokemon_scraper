@@ -11,6 +11,9 @@
 <body>
 <div class="container">
     {% block content %}
+        <h1>List of some pokemon - refresh for updates (5 at a time) - functionality to be improved anon</h1>
+    </form>
+
         <table>
             <thead>
             <td>name</td>
@@ -25,7 +28,7 @@
             {% for pokemon in pokemon_list %}
                 <tr>
                     <td>{{ pokemon.name }}</td>
-                    <td>{{ pokemon.description }}</td>
+                    <td>{{  pokemon }}</td>
                     <td>{{ pokemon.height }}</td>
                     <td>{{ pokemon.weight }}</td>
                     <td>{{ pokemon.base_experience }}</td>
